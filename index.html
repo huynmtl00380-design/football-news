@@ -3,45 +3,231 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>footballnews</title>
+    <title>GoalWave</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="navbar">
-      <div class="logo">footballnews</div>
+    <header class="nav">
+      <div class="head">
+        <div class="logo">G</div>
+        <div>
+          <div>GoalWave</div>
+          <div>Tin tức-Bảng điểm-Lịch thi đấu</div>
+        </div>
+      </div>
       <nav>
         <a href="#">Lịch Thi Đấu</a>
         <a href="#">Đội</a>
         <a href="#">Ảnh</a>
+        <button class="follow-btn">Theo dõi</button>
       </nav>
-      <button class="follow-btn">Theo dõi</button>
     </header>
 
-    <section class="hero">
-      <h1>Đêm của những bàn thắng — Cập nhật tức thì</h1>
-      <p>
-        Tin nhanh, lịch thi đấu, và điểm số trực tiếp. Giao diện nhẹ, phù hợp di
-        động và dễ chỉnh sửa.
-      </p>
+    <main class="form">
+      <section class="hero">
+        <h1>Đêm của những bàn thắng — Cập nhật tức thì</h1>
+        <p>
+          Tin nhanh, lịch thi đấu, và điểm số trực tiếp. Giao diện nhẹ, phù hợp
+          di động và dễ chỉnh sửa.
+        </p>
 
-      <div class="stats">
-        <div class="stat-box">
-          <div class="value">3</div>
-          <p>Bàn thắng</p>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <h2>3</h2>
+            <span>Bàn thắng</span>
+          </div>
+          <div class="stat-box">
+            <h2>1</h2>
+            <span>Phút</span>
+          </div>
+          <div class="stat-box">
+            <h2>45'</h2>
+            <span>Hiệp 1</span>
+          </div>
         </div>
-        <div class="stat-box">
-          <div class="value">1</div>
-          <p>Phút</p>
+
+        <div class="btn-group">
+          <button class="main-btn">Xem Lịch</button>
+          <a class="link">Danh sách đội →</a>
         </div>
-        <div class="stat-box">
-          <div class="value">45'</div>
-          <p>Hiệp 1</p>
+
+        <div class="info-grid">
+          <div class="card">
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <div>
+                <p><strong>BXH Nhanh</strong></p>
+                <p>Top 3 hiện tại</p>
+              </div>
+              <div>
+                <h2>63</h2>
+                <p>Điểm</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <p><strong>Cầu thủ nổi bật</strong></p>
+            <p>Số bàn: 8 — Kiến tạo: 3</p>
+          </div>
+          <div class="card">
+            <div><strong>Thông báo</strong></div>
+            <p>Trận khai mạc: 20:00, 10/11</p>
+          </div>
+        </div>
+      </section>
+
+      <aside>
+        <section class="match-card">
+          <div class="teams">
+            <span class="team-tag">MU</span> Manchester U
+            <strong>3 — 1</strong>
+            Liverpool <span class="team-tag">L</span>
+          </div>
+          <p>Sút: 14 — Góc: 6</p>
+          <p><b>Ghi chú:</b> Rashford ghi 2 bàn — Thẻ đỏ ở phút 78</p>
+          <p class="done">Trận đã kết thúc</p>
+        </section>
+
+        <section class="news">
+          <h3>Bảng Tin</h3>
+          <ul>
+            <li>Chấn thương: De Gea nghiêm trọng</li>
+            <li>HLV tuyên bố thay đổi chiến thuật</li>
+            <li>Vé trận chung kết mở bán</li>
+          </ul>
+        </section>
+      </aside>
+    </main>
+
+    <section style="padding: 48px 36px">
+      <h1>Lịch Thi Đấu & Kết Qủa</h1>
+      <div class="info-grid">
+        <div class="team-name">
+          <div>10/11-20:00</div>
+          <div class="fixture">
+            <div class="team">
+              <span class="crest">AC</span>
+              <div class="for">AC Milan</div>
+            </div>
+            <div>VS</div>
+            <div class="team">
+              <div class="for">Real Madrid</div>
+              <span class="crest">RM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-name">
+          <div>11/11 — 18:30</div>
+          <div class="fixture">
+            <div class="team">
+              <span class="crest">PSG</span>
+              <div class="for">PSG</div>
+            </div>
+            <div>VS</div>
+            <div class="team">
+              <div class="for">Bayern</div>
+              <span class="crest">B</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-name">
+          <div>12/11 — 21:00</div>
+          <div class="fixture">
+            <div class="team">
+              <span class="crest">BAR</span>
+              <div class="for">Bacerlona</div>
+            </div>
+            <div>VS</div>
+            <div class="team">
+              <div class="for">Arsenal</div>
+              <span class="crest">ARS</span>
+            </div>
+          </div>
         </div>
       </div>
-
-      <button class="schedule-btn">Xem Lịch</button>
     </section>
 
-    <h2 class="section-title">Lịch Thi Đấu & Kết Quả</h2>
+    <section style="padding: 48px 36px">
+      <h1>Đội Hàng Đầu</h1>
+      <div class="info-grid">
+        <div class="infor">
+          <span class="crest">RM</span>
+          <div>
+            <div>Real Madrid</div>
+            <div>Hạng 1 • 68 pts</div>
+          </div>
+        </div>
+
+        <div class="infor">
+          <span class="crest">BAR</span>
+          <div>
+            <div>Bacerlona</div>
+            <div>Hạng 2 • 64 pts</div>
+          </div>
+        </div>
+
+        <div class="infor">
+          <span class="crest">B</span>
+          <div>
+            <div>Bayern Munich</div>
+            <div>Hạng 3 • 61 pts</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="padding: 48px 36px">
+      <h1>Kho Ảnh</h1>
+      <div class="grid">
+        <div
+          class="img"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=60');
+          "
+        ></div>
+
+        <div
+          class="img"
+          style="
+            background-image: url('https://plus.unsplash.com/premium_photo-1730852219624-8976c6304a49?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dGVhbSUyMGZvb3RiYWxsfGVufDB8fDB8fHww');
+          "
+        ></div>
+
+        <div
+          class="img"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1584801198917-796b389617f8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVhbSUyMGZvb3RiYWxsfGVufDB8fDB8fHww');
+          "
+        ></div>
+
+        <div
+          class="img"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1622862259519-f6aab1c6168a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dGVhbSUyMGZvb3RiYWxsfGVufDB8fDB8fHww');
+          "
+        ></div>
+      </div>
+    </section>
+
+    <footer style="display: flex; justify-content: space-between; align-items: center;" >
+      <div class="footer-left" style="padding: 48px 36px;">
+        <div style="font-weight: 800;">GoalWave</div>
+        <div>From MindX Technology</div>
+      </div>
+    
+    <div class="footer-right">
+      <a href="#" class="muted" font-size: 16px;>Chính sách</a>
+      <a href="#" class="muted" font-size: 16px;>Liên hệ</a>
+      <a href="#" class="follow-btn" style="text-decoration: none;">Đăng Kí Nhận Tin</a>
+    </div>
+    </footer>
   </body>
 </html>
